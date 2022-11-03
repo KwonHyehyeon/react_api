@@ -1,0 +1,44 @@
+.refer__inner {
+    padding-bottom: 200px;
+
+    h2 {
+        font-size: 30px;
+        color: var(--white);
+    }
+}
+
+.refer__list {
+    border: 1px solid var(--bg-dark-border);
+    li{
+        border-bottom: 1px solid var(--bg-dark-border);
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: var(--white);
+            font-family: var(--font-kor1);
+            // padding: 10px;
+
+            span {
+                display: inline-block;
+                padding: 15px 20px;
+            }
+            .num {
+                flex: 1 1 5%;
+                text-align: center;
+                border-right : 1px solid var(--bg-dark-border);
+            }
+            .name {
+                flex: 1 1 20%;
+            }
+            .desc {
+                flex: 1 1 65%;
+                border-right : 1px solid var(--bg-dark-border);
+            }
+            .star {
+                flex: 1 1 15%;
+                text-align: center;
+            }
+        }
+    }
+}

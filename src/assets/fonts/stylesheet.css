@@ -1,0 +1,24 @@
+@font-face {
+    font-family: '';
+    src: url('IropkeBatangOTFM00.eot');
+    src: url('IropkeBatangOTFM00.eot?#iefix') format('embedded-opentype'),
+        url('IropkeBatangOTFM00.woff2') format('woff2'),
+        url('IropkeBatangOTFM00.woff') format('woff'),
+        url('IropkeBatangOTFM00.svg#IropkeBatangOTFM00') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iropke Batang';
+    src: url('IropkeBatangM.eot');
+    src: url('IropkeBatangM.eot?#iefix') format('embedded-opentype'),
+        url('IropkeBatangM.woff2') format('woff2'),
+        url('IropkeBatangM.woff') format('woff'),
+        url('IropkeBatangM.svg#IropkeBatangM') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
