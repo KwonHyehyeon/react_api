@@ -103,9 +103,9 @@
             "num": 9,
             "title": "justify-content",
             "desc": "justify-content 속성은 콘텐츠의 좌우 관계 정렬 상태를 정의합니다.",
-            "descBasic": "justify-content ;",
-            "descApple": "flezx",
-            "descVer": "justify-content",
+            "descBasic": ": center",
+            "descApple": "flex",
+            "descVer": "CSS3",
             "descStar": "★★★★☆",
             "definition": [
                 "justify-content 속성은 콘텐츠의 좌우 관계 정렬 상태를 정의합니다."
