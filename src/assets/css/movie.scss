@@ -1,142 +1,190 @@
 .movie__inner {
-    h2 {
-        color: #000;
-        text-align: center;
-        font-size: 30px;
-        font-weight: 700;
-        background-color: #fff;
-        border-bottom: 1px solid #fff;
-        position: relative;
-        padding: 5px 0;
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            top: -8px;
-            left: 0;
-            border-bottom: 1px solid #fff;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            top: 60px;
-            left: 0;
-            border-bottom: 1px solid #fff;
-        }
-    }
-    ul {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
-        .swiper {
-            padding-top: 80px;
-            padding-left: 48px;
-            margin-bottom: 30px;
-        }
-        .swiper-pagination {
-            color: #fff;
-        }
-        li {
-            width: 18%;
-            position: relative;
-           
-            em {
-                display: block;
-                height: 80px;
-                margin-bottom: 60px;
-                font-family: var(--font-kor2);
-            }
-            .title {
-                padding: 5px 0;
-                display: inline-block;
-            }
-            .star {
-                background: #fff;
-                color: #000;
-                border-radius: 100px;
-                position: absolute;
-                right: 10px;
-                top: 10px;
-                width: 40px;
-                height: 30px;
-                text-align: center;
-                line-height: 30px;
-                font-weight: 800;
-            }
-        }
-    }
-    a {
-        color:var(--white);
-    }
-}
-
-.movie__search {
+  h2 {
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    padding: 5px 0;
     margin-bottom: 100px;
 
-    .container {
-        position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: -8px;
+      left: 0;
+      border-bottom: 1px solid #fff;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
     }
 
-    h2 {
-        color: var(--white);
-        font-size: 40px;
-        text-indent: -9999px;
-        height: 0;
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
     }
-    input {
-        background: #000;
-        border: 2px solid var(--white);
-        border-radius: 50px;
-        color: var(--white);
-        width: 100%;
-        padding: 14px 30px;
+
+    .swiper-slide img {
+      display: block;
+      height: 400px;
+    }
+    .swiper-pagination-bullet {
+      background: #fff;
+    }
+    .swiper-pagination-bull.active {
+      background: blue;
+    }
+
+    li {
+      width: 18%;
+      position: relative;
+
+      em {
+        display: block;
+        height: 80px;
+        margin-bottom: 20px;
         font-family: var(--font-kor2);
-    }
-    button {
-        position: absolute;
-        right: 6px;
-        top: 7px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 0;
-        font-family: var(--font-kor2);
-        cursor: pointer;
-        z-index: 1000;
-    }
-}
-.Movielist {
-    position: relative;
-    transition: all 0.4s;
-    &:hover {
-        transform: scale(1.07);
-    }
-    .rank {
-        font-size: 80px;
-        position: absolute;
-        top: -50px;
-        left: -10px;
-        text-shadow: 4px 4px 2px rgba(255,255,255,0.4);
-        z-index: 10000;
-    }
-    .MovieImg {
-        width: 300px; 
-    }
-    .Moviestar {
+      }
+      .title {
+        padding: 5px 0;
+        display: inline-block;
+      }
+      .star {
         background: #fff;
         color: #000;
         border-radius: 100px;
         position: absolute;
-        right: -230px;
-        top: -35px;
+        right: 10px;
+        top: 10px;
         width: 40px;
-        height: 25px;
+        height: 30px;
         text-align: center;
-        line-height: 25px;
+        line-height: 30px;
         font-weight: 800;
+      }
     }
-    
+  }
+  a {
+    color: var(--white);
+  }
+}
+
+.movie__search {
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  .container {
+    position: relative;
+  }
+
+  h2 {
+    color: var(--white);
+    font-size: 40px;
+    text-indent: -9999px;
+    height: 0;
+  }
+  input {
+    background: #000;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    width: 100%;
+    padding: 14px 30px;
+    font-family: var(--font-kor2);
+  }
+  button {
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    font-family: var(--font-kor2);
+    cursor: pointer;
+    z-index: 1000;
+  }
+}
+.Movielist {
+  position: relative;
+  transition: all 0.4s;
+  &:hover {
+    transform: scale(1.02);
+  }
+  .rank {
+    font-size: 80px;
+    position: absolute;
+    top: -50px;
+    left: -10px;
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.4);
+    z-index: 10000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: #000;
+  }
+  .MovieImg {
+    width: 300px;
+  }
+  .Movietitle {
+    padding: 5px 0;
+    display: inline-block;
+    width: 300px;
+  }
+  .Moviestar {
+    background: #fff;
+    color: #000;
+    border-radius: 100px;
+    position: absolute;
+    right: -245px;
+    top: -35px;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 800;
+  }
+}
+.movie__btn {
+  .container {
+    button {
+      background: inherit;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+      overflow: visible;
+      cursor: pointer;
+      color: #fff;
+      font-family: var(--font-sub2);
+      background-color: rgb(140, 140, 140);
+      border-radius: 20px;
+      padding: 5px 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+
+      &:hover {
+        background-color: #000;
+        box-shadow: 0 0 1em #fff, 0 0 0.4em 0em #fff, 0 0 0.4em 0em #fff;
+      }
+    }
+  }
 }

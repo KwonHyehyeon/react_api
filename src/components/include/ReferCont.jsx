@@ -1,11 +1,11 @@
 import React from "react";
 
-const ReferText = ({ num , title, desc, descBasic, descApple, descVer, descStar}) => {
+const ReferText = ({ num , name, desc, descBasic, descApple, descVer, descStar}) => {
   return (
   <li>
     <a href="/">
     <span className="num">{num}</span>
-    <span className="title">{title}</span>
+    <span className="name">{name}</span>
     <span className="desc">{desc}</span>
     <span className="descBasic">{descBasic}</span>
     <span className="descApple">{descApple}</span>
@@ -30,7 +30,7 @@ const ReferCont = ({ references }) => {
               <ReferText 
                 key = {idx}
                 num = {refer.num}
-                title = {refer.title}
+                name = {refer.name}
                 desc = {refer.desc}
                 descBasic = {refer.descBasic}
                 descApple = {refer.descApple}
